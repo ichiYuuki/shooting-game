@@ -72,8 +72,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 188764}
-  m_LocalRotation: {x: 0, y: 0, z: .98480773, w: -.173648298}
-  m_LocalPosition: {x: 0, y: -.300000012, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.9848077, w: -0.1736483}
+  m_LocalPosition: {x: 0, y: -0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 492290}
@@ -84,8 +84,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100216}
-  m_LocalRotation: {x: 0, y: 0, z: .984807789, w: .173647985}
-  m_LocalPosition: {x: 0, y: -.299999952, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.9848078, w: 0.17364798}
+  m_LocalPosition: {x: 0, y: -0.29999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 492290}
@@ -96,8 +96,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 161124}
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: -1.62920685e-07}
-  m_LocalPosition: {x: 0, y: -.299999952, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: -0.00000016292068}
+  m_LocalPosition: {x: 0, y: -0.29999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 492290}
@@ -109,7 +109,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153452}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.86600006, y: 2.34299994, z: 0}
+  m_LocalPosition: {x: 1.866, y: 2.343, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 424668}
@@ -124,9 +124,10 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153452}
+  m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: .0500000007
+  m_AngularDrag: 0.05
   m_GravityScale: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -140,20 +141,21 @@ PolygonCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153452}
   m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: .14810805, y: .297490597}
-      - {x: -.154243365, y: .299436092}
-      - {x: -.222921073, y: .240255356}
-      - {x: -.245069429, y: -.144652486}
-      - {x: -.187492728, y: -.260635018}
-      - {x: .165904716, y: -.260635138}
-      - {x: .245381072, y: -.139911771}
-      - {x: .222921133, y: .280952454}
+    - - {x: 0.14810805, y: 0.2974906}
+      - {x: -0.15424336, y: 0.2994361}
+      - {x: -0.22292107, y: 0.24025536}
+      - {x: -0.24506943, y: -0.14465249}
+      - {x: -0.18749273, y: -0.26063502}
+      - {x: 0.16590472, y: -0.26063514}
+      - {x: 0.24538107, y: -0.13991177}
+      - {x: 0.22292113, y: 0.28095245}
 --- !u!95 &9563408
 Animator:
   serializedVersion: 3
@@ -182,10 +184,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b87c61efc17dfa644a35b1bddd26f92b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: .5
-  shotDelay: .300000012
+  speed: 0.5
+  shotDelay: 0.3
   bullet: {fileID: 106638, guid: 33762fc78ee9b2141a9012a4dcb28c74, type: 2}
-  canshot: 0
+  canshot: 1
   explosion: {fileID: 106886, guid: fb54fa6e5d62cfc469a631c56dc9c88f, type: 2}
 --- !u!114 &11493218
 MonoBehaviour:
@@ -216,21 +218,33 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300008, guid: bf3bdd2147b394bc2b771f2556f0b49d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 106886, guid: fb54fa6e5d62cfc469a631c56dc9c88f, type: 2}
+    - target: {fileID: 0}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 106638, guid: 33762fc78ee9b2141a9012a4dcb28c74, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 153452}
