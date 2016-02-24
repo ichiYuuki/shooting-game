@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 421490}
   - 212: {fileID: 21249144}
   - 60: {fileID: 6078482}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bullet 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   - 4: {fileID: 466238}
   - 212: {fileID: 21202178}
   - 60: {fileID: 6043798}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bullet2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - 4: {fileID: 470344}
   - 50: {fileID: 5029292}
   - 114: {fileID: 11409264}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PlayerBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 101528}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.140000001, y: 0, z: 0}
+  m_LocalPosition: {x: -0.14, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 470344}
@@ -70,7 +70,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 179848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .140000001, y: 0, z: 0}
+  m_LocalPosition: {x: 0.14, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 470344}
@@ -82,7 +82,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 199890}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .526536524, y: 1.82754612, z: 0}
+  m_LocalPosition: {x: 0.5265365, y: 1.8275461, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 421490}
@@ -96,9 +96,10 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 199890}
+  m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: .0500000007
+  m_AngularDrag: 0.05
   m_GravityScale: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -112,20 +113,21 @@ PolygonCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 179848}
   m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: -.0144977123, y: .0800000429}
-      - {x: -.0311980993, y: .0419483185}
-      - {x: -.0312211663, y: .015239954}
-      - {x: -.0112211257, y: -.0800000429}
-      - {x: .00951401889, y: -.0791465044}
-      - {x: .0323545188, y: .00618028641}
-      - {x: .0312210768, y: .0343922377}
-      - {x: .0119139403, y: .0800000429}
+    - - {x: -0.014497712, y: 0.08000004}
+      - {x: -0.0311981, y: 0.04194832}
+      - {x: -0.031221166, y: 0.015239954}
+      - {x: -0.011221126, y: -0.08000004}
+      - {x: 0.009514019, y: -0.079146504}
+      - {x: 0.03235452, y: 0.0061802864}
+      - {x: 0.031221077, y: 0.034392238}
+      - {x: 0.01191394, y: 0.08000004}
 --- !u!60 &6078482
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -133,20 +135,21 @@ PolygonCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 101528}
   m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: -.0121971518, y: .0807609558}
-      - {x: -.0313997418, y: .0435554981}
-      - {x: -.0311831981, y: .0179777145}
-      - {x: -.0113997608, y: -.0808454752}
-      - {x: .0130907148, y: -.0800000429}
-      - {x: .0318218619, y: .00901997089}
-      - {x: .0299728662, y: .0372918844}
-      - {x: .0144904405, y: .0812175274}
+    - - {x: -0.012197152, y: 0.080760956}
+      - {x: -0.03139974, y: 0.043555498}
+      - {x: -0.031183198, y: 0.017977715}
+      - {x: -0.011399761, y: -0.080845475}
+      - {x: 0.013090715, y: -0.08000004}
+      - {x: 0.031821862, y: 0.009019971}
+      - {x: 0.029972866, y: 0.037291884}
+      - {x: 0.0144904405, y: 0.08121753}
 --- !u!114 &11409264
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -159,6 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  lifeTime: 1
 --- !u!212 &21202178
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -177,14 +181,18 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1988456703
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9a0317eefd42740f0997b1c4587a47ff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!212 &21249144
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -203,14 +211,18 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1988456703
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9a0317eefd42740f0997b1c4587a47ff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -221,6 +233,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_SortingLayerID
       value: 1988456703
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: lifeTime
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

@@ -26,10 +26,15 @@ public class Player : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D c){
-		Destroy (c.gameObject);
-
-		spaceship.Explosion ();
-
-		Destroy (gameObject);
+		string layername = LayerMask.LayerToName (c.gameObject.layer);
+		
+		if (layername == "Bullet(Enemy)") {
+			Destroy(c.gameObject);
+		}
+		if (layername == "Bullet(Enemy)" || layername == "Enemy") {
+			spaceship.Explosion();
+			Destroy(gameObject);
+		}
 	}
 }
+
