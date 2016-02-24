@@ -6,11 +6,11 @@ public class Spaceship : MonoBehaviour {
 	public float speed;
 	public float shotDelay;
 	public GameObject bullet;
-	public bool canShot;
+	public bool canshot;
 	public GameObject explosion;
 
 	public void Explosion(){
-		Instantiate (explosion, transform.position, transform.rotation);
+		Instantiate (explosion, transform.position, transform.rotation );
 	}
 
 	public void Shot (Transform origin) {
@@ -20,4 +20,6 @@ public class Spaceship : MonoBehaviour {
 	public void Move (Vector2 direction) {
 		GetComponent<Rigidbody2D> ().velocity = direction * speed;
 	}
+
+
 }
